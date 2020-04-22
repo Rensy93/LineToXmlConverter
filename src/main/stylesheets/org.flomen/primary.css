@@ -1,0 +1,59 @@
+.root {
+    -fx-background-color: #131718;
+}
+
+#title {
+    -fx-text-fill: #109cb0;
+
+}
+
+.text-field {
+    -fx-background-color: #131718;
+    -fx-text-fill: #9d9e9d;
+    -fx-border-color: #109cb0;
+    -fx-border-radius: 2px;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+
+}
+
+.text-field-placeholder {
+    -fx-text-fill: #109cb0;
+}
+
+#selectFileBtn {
+    -fx-font-size: 12px;
+}
+
+#selectFileBtn:hover {
+    -fx-font-size: 12px;
+}
+
+#saveFileLocationBtn {
+    -fx-font-size: 12px;
+}
+
+#saveFileLocationBtn:hover {
+    -fx-font-size: 12px;
+}
+
+#convertBtn {
+    -fx-font-size: 15px;
+}
+
+#convertBtn:hover {
+    -fx-font-size: 15px;
+}
+
+.button {
+    -fx-background-color: transparent;
+    -fx-border-color: #109cb0;
+    -fx-border-radius: 2px;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-text-fill: #109cb0;
+    -fx-font-weight: bold;
+    -fx-effect: none;
+}
+
+

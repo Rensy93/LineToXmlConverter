@@ -1,0 +1,74 @@
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.flomen.PrimaryController" stylesheets="@primary.css">
+   <children>
+      <VBox id="title-vbox" alignment="TOP_CENTER" prefHeight="700.0" prefWidth="500.0">
+         <children>
+            <Label id="title" fx:id="title" alignment="CENTER" prefWidth="500.0" text="Line format to xml converter" textAlignment="CENTER"
+                   wrapText="true">
+
+               <font>
+                  <Font size="36.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0"/>
+               </VBox.margin>
+            </Label>
+            <HBox id="file-location-vbox" alignment="CENTER" prefHeight="40.0" prefWidth="500.0">
+               <children>
+                  <TextField id="selectFile" fx:id="selectFileLocation" focusTraversable="false" prefHeight="30.0"
+                             prefWidth="200.0" promptText="file location">
+                     <HBox.margin>
+                        <Insets right="5.0"/>
+                     </HBox.margin>
+                  </TextField>
+                  <Button id="selectFileBtn" fx:id="selectFileBtn" onMouseClicked="#onClickEventSelectButton"
+                          focusTraversable="false" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0"
+                          text="..."/>
+               </children>
+               <VBox.margin>
+                  <Insets top="50.0"/>
+               </VBox.margin>
+            </HBox>
+            <HBox id="save-file-vbox" alignment="CENTER" prefHeight="40.0" prefWidth="400.0">
+               <children>
+                  <TextField id="saveFileLocation" fx:id="saveFileLocation" focusTraversable="false"
+                             prefHeight="30.0" prefWidth="200.0" promptText="Save location">
+                     <HBox.margin>
+                        <Insets right="5.0"/>
+                     </HBox.margin>
+                  </TextField>
+                  <Button id="saveLocationBtn" fx:id="saveFileLocationBtn"
+                          onMouseClicked="#onClickEventSaveLocationButton" focusTraversable="false"
+                          mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="..."/>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0"/>
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="convertBtn" id="convertBtn" focusTraversable="false" mnemonicParsing="false"
+                    onMouseClicked="#onClickEventConvertButton" prefHeight="30.0" prefWidth="235.0"
+                    text="Convert &amp; save" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets top="60.0"/>
+               </VBox.margin>
+            </Button>
+            <Label id="completedLabel" fx:id="completedLabel" alignment="CENTER" visible="false"
+                   focusTraversable="false" maxWidth="235.0" prefHeight="30.0" text="Complete"
+                   textAlignment="CENTER" textFill="#109cb0" wrapText="true">
+               <font>
+                  <Font size="15.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0"/>
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</VBox>
